@@ -7,4 +7,8 @@ public record CustomerDto(Long id,
                          String lastName,
                          String accountNumber,
                          Long balance) {
+
+    public String getFullName(){
+        return firstName + " " + lastName;
+    }
 }

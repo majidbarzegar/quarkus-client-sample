@@ -37,7 +37,7 @@ public interface CoreBankingClient {
     @Path("/transfers")
     CBResponseDto<TransferResponse> transfer(TransferRequest request, @HeaderParam("X-National-Code") String currentUserNationalCode);
 
-    @POST
+    @GET
     @Path("/transfers/history")
     CBResponseDto<List<TransferInfoDto>> transferHistory(@HeaderParam("X-National-Code") String currentUserNationalCode);
 
